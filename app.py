@@ -87,6 +87,11 @@ def convert(a):
 def h():
 	return render_template("index.html")
 
+#index.html
+@app.route("/admin")
+def adminpage():
+	return render_template("admin.html")
+
 
 
 

@@ -115,7 +115,7 @@ def index():
 			c.close()
 		else:
 			return jsonify({"error":'Registration no not found !'})
-		return jsonify(diction)    
+		return jsonify(diction,cgpa)    
 	return "failed"
 
 

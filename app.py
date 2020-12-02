@@ -87,12 +87,20 @@ def convert(a):
 def h():
 	return render_template("index.html")
 
-#index.html
+#admin.html
 @app.route("/admin")
 def adminpage():
 	return render_template("admin.html")
 
-
+#upload file 
+@app.route("/addresult")
+def addresultfile():
+	if(request.method=="POST"):
+		try:
+			pass
+		except:
+			return "SOME ERROR OCCURED!!!💀💀💀💀💀"
+		return render_template("admin.html")
 
 
 
